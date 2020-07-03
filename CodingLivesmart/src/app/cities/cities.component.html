@@ -1,0 +1,9 @@
+<div>
+ <input #city type="text">
+ <button type="button" class="btn btn-primary" (click)="search(city.value)">Search</button>
+</div>
+
+
+<table class="table">
+    <tr *ngFor="let cityDatas of cityData">{{cityDatas.city}}</tr>
+    </table>
